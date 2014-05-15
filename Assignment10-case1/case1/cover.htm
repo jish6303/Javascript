@@ -1,0 +1,42 @@
+<html>
+<head>
+<!-- 
+   New Perspectives on JavaScript, 2nd Edition
+   Tutorial 10
+   Case Problem 1
+
+   The Civil War Journal Cover
+   Author: Jiaju Shen
+   Date: 4/18/2014  
+
+   Filename:         cover.htm
+   Supporting files: cover.css, form.htm
+
+-->
+   <title>Subscription</title>
+   <link href="cover.css" rel="stylesheet" type="text/css" />
+   <script type="text/javascript">
+    function showForm() {
+        window.opener.location="form.htm";
+        self.close();
+    }
+	</script>
+
+
+</head>
+<body>
+
+   <div id="main">
+      <p><a href="javascript:void(null)" onclick="showForm()">
+            <b>Order 12 issues <br />for: $9.95*</b>
+         </a>
+      </p>
+      <p>
+         <img src="cover.jpg" alt="The Civil War Journal" /><br />
+         *25% off the <br />newsstand price!
+      </p>
+   </div>
+
+</body>
+
+</html>
